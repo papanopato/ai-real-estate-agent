@@ -19,7 +19,7 @@ AFFILIATE_LINKS = {
     },
     "dealcheck": {
         "name": "DealCheck",
-        "url": "https://dealcheck.io/?ref=YOUR_AFFILIATE_ID",
+        "url": "https://dealcheck.io?fp_ref=omar18",
         "description": "Analyse d'investissement immobilier",
         "commission": "30% recurrent",
         "category": "Analyse de deals"
