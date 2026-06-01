@@ -1,0 +1,161 @@
+
+/* ============================================
+MOBILE RESPONSIVE CSS - PWA OPTIMIZED
+============================================ */
+
+/* Mobile-first approach */
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  .header-section {
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .header-section h1 {
+    font-size: 28px !important;
+  }
+
+  .header-section p {
+    font-size: 16px !important;
+  }
+
+  /* Welcome banner */
+  .welcome-banner {
+    padding: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .welcome-banner h2 {
+    font-size: 22px !important;
+  }
+
+  /* Property cards */
+  .property-card {
+    padding: 20px !important;
+    margin: 12px 0 !important;
+  }
+
+  .property-card h3 {
+    font-size: 20px !important;
+  }
+
+  /* Buttons */
+  .stButton > button {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+  }
+
+  /* Language buttons */
+  .lang-btn {
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Tabs */
+  .stTabs [data-baseweb="tab"] {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+  }
+
+  /* Metrics */
+  .stMetric {
+    padding: 16px !important;
+  }
+
+  .stMetric > div {
+    font-size: 24px !important;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 24px !important;
+    margin-top: 32px !important;
+  }
+
+  /* Inputs */
+  .stTextInput > div > div > input,
+  .stSelectbox > div > div > div,
+  .stNumberInput > div > div > input {
+    padding: 10px !important;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+
+  /* Touch-friendly tap targets */
+  button, a, input, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Safe area for notched phones */
+  .main {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Tablet adjustments */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-section {
+    padding: 28px !important;
+  }
+
+  .property-card {
+    padding: 24px !important;
+  }
+}
+
+/* Landscape mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .welcome-banner {
+    padding: 16px !important;
+  }
+
+  .welcome-banner h2 {
+    font-size: 18px !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .main {
+    background: linear-gradient(135deg, #0C4A6E 0%, #075985 25%, #0369A1 50%, #0284C7 75%, #0EA5E9 100%) !important;
+  }
+
+  .header-section,
+  .property-card,
+  .footer {
+    background: rgba(15, 23, 42, 0.95) !important;
+    border-color: #1E40AF !important;
+  }
+
+  h1, h2, h3 {
+    color: #E0F2FE !important;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .property-card {
+    border-width: 3px !important;
+  }
+
+  .stButton > button {
+    border-width: 3px !important;
+  }
+}
